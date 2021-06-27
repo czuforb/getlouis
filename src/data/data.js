@@ -1,5 +1,6 @@
 data = [
   {
+    date: "06-06-2021",
     title: "New bracelet 2021",
     brand: "Pandora",
     image: "images/pandora.jpg",
