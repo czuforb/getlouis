@@ -1,27 +1,32 @@
 import React from "react";
 import styled from "@emotion/styled";
 import Campaigns from "./components/CampaignsContainer";
+import CampaignDetails from "./components/CampaignDetails";
 
 const App = () => {
   return (
-    <Container>
-      <Navigation>
-        <h2>Logo</h2>
-        <h3>Burger</h3>
-      </Navigation>
-      <Hero>
-        <h1>
-          Newest <br /> campaigns
-        </h1>
-      </Hero>
-      <Campaigns />
-    </Container>
+    <>
+      <Container>
+        <Navigation>
+          <h2>Logo</h2>
+          <h3>Burger</h3>
+        </Navigation>
+        <Hero>
+          <h1>
+            Newest <br /> campaigns
+          </h1>
+        </Hero>
+        <Campaigns />
+        <CampaignDetails />
+      </Container>
+    </>
   );
 };
 
 export default App;
 
 const Container = styled.main`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
