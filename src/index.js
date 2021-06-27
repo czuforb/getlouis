@@ -17,6 +17,11 @@ ReactDOM.render(
             -webkit-font-smoothing: antialiased;
             font-smoothing: antialiased;
           }
+
+          .swiper-container {
+            width: 100%;
+            height: 100%;
+          }
         `}
       />
       <App />

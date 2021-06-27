@@ -1,8 +1,6 @@
-data = [
+export const data = [
   {
-    date: "06-06-2021",
     title: "New bracelet 2021",
-    brand: "Pandora",
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -17,6 +15,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
@@ -27,7 +26,7 @@ data = [
   },
   {
     title: "New bracelet 2021",
-    brand: "Pandora",
+
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -42,6 +41,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
@@ -52,7 +52,7 @@ data = [
   },
   {
     title: "New bracelet 2021",
-    brand: "Pandora",
+
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -67,6 +67,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
@@ -77,7 +78,7 @@ data = [
   },
   {
     title: "New bracelet 2021",
-    brand: "Pandora",
+
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -92,6 +93,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
@@ -102,7 +104,7 @@ data = [
   },
   {
     title: "New bracelet 2021",
-    brand: "Pandora",
+
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -117,6 +119,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
@@ -127,7 +130,7 @@ data = [
   },
   {
     title: "New bracelet 2021",
-    brand: "Pandora",
+
     image: "images/pandora.jpg",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     category: "Lifestyle",
@@ -142,6 +145,7 @@ data = [
     ],
     hashtag: "#pandoraDK",
     brand: {
+      name: "pandora",
       handle: "@pandoraDK",
       url: "http://pandora.dk",
     },
