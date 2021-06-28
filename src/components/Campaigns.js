@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Slide from "./Slide";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
@@ -11,17 +10,25 @@ import SwiperCore, { Navigation } from "swiper/core";
 // import data
 import { data } from "../data/data";
 // install Swiper modules
+import CampaignCard from "./CampaignCard";
+import CampaignDetails from "./CampaignDetails";
 SwiperCore.use([Navigation]);
 
-const Campaigns = () => {
+const Campaigns = (props) => {
   return (
     <>
       <CampContainer>
         <Swiper navigation={true} spaceBetween={32} slidesPerView={3.75}>
           {data.map((e, i) => (
-            <SwiperSlide key={i}>
-              <Slide data={e} />
-            </SwiperSlide>
+            <>
+              <SwiperSlide key={i}>
+                <CampaignCard
+                  data={e}
+                  openCampaignModal={props.openCampaignModal}
+                  modal={props.setOpen}
+                />
+              </SwiperSlide>
+            </>
           ))}
         </Swiper>
       </CampContainer>

@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 
-const Slide = ({ data }) => {
+const CampaignCard = ({ data, openCampaignModal, modal }) => {
   const { brand, title } = data;
   return (
-    <CampaignSlide>
+    <CampaignSlide onClick={() => modal(true)}>
       <Text>
         <h2>{brand.name}</h2>
         <h3>{title}</h3>
@@ -13,9 +13,10 @@ const Slide = ({ data }) => {
   );
 };
 
-export default Slide;
+export default CampaignCard;
 
 const CampaignSlide = styled.div`
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 2rem;

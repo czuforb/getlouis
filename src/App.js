@@ -1,23 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
-import Campaigns from "./components/CampaignsContainer";
+import Campaigns from "./components/Campaigns";
 import CampaignDetails from "./components/CampaignDetails";
+import { data } from "./data/data";
 
 const App = () => {
+  const [modalOpen, setmodalOpen] = useState(false);
+  const [campData, setcampData] = useState([]);
+  const openCampaignModal = (campaignTitle) => {
+    const camp = data.filter((e) => e.title == campaignTitle);
+    setmodalOpen(true);
+    setcampData(camp[0]);
+  };
+  const closeCampaignModal = () => setmodalOpen(false);
   return (
     <>
       <Container>
         <Navigation>
           <h2>Logo</h2>
-          <h3>Burger</h3>
+          <h3>{modalOpen ? "flex" : "none"}</h3>
         </Navigation>
         <Hero>
           <h1>
             Newest <br /> campaigns
           </h1>
         </Hero>
-        <Campaigns />
-        <CampaignDetails />
+        <Campaigns modal={openCampaignModal} setOpen={setmodalOpen} />
+        <CampaignDetails
+          modalOpen={modalOpen}
+          data={campData}
+          closeModal={closeCampaignModal}
+        />
       </Container>
     </>
   );
@@ -53,6 +66,7 @@ const Navigation = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-bottom: auto;
+  color: white;
   h3 {
     margin-left: auto;
   }
