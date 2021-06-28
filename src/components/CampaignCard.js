@@ -2,9 +2,9 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const CampaignCard = ({ data, openCampaignModal, modal }) => {
-  const { brand, title } = data;
+  const { brand, title, image } = data;
   return (
-    <CampaignSlide onClick={() => modal(true)}>
+    <CampaignSlide image={image}>
       <Text>
         <h2>{brand.name}</h2>
         <h3>{title}</h3>
@@ -20,8 +20,10 @@ const CampaignSlide = styled.div`
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background: url("/images/pandora.jpg");
-  object-fit: cover;
+  background: url(${(props) => props.image});
+  /* background: url("/images/pandora.jpg"); */
+  object-fit: contain;
+  background-size: cover;
 `;
 
 const Text = styled.div`

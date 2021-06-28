@@ -31,6 +31,9 @@ ReactDOM.render(
           .swiper-button-next {
             color: white;
           }
+          .transparent {
+            background-color: transparent !important;
+          }
         `}
       />
       <App />

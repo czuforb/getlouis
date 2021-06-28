@@ -11,10 +11,9 @@ import SwiperCore, { Navigation } from "swiper/core";
 import { data } from "../data/data";
 // install Swiper modules
 import CampaignCard from "./CampaignCard";
-import CampaignDetails from "./CampaignDetails";
 SwiperCore.use([Navigation]);
 
-const Campaigns = (props) => {
+const Campaigns = ({ openModal }) => {
   return (
     <>
       <CampContainer>
@@ -22,11 +21,7 @@ const Campaigns = (props) => {
           {data.map((e, i) => (
             <>
               <SwiperSlide key={i}>
-                <CampaignCard
-                  data={e}
-                  openCampaignModal={props.openCampaignModal}
-                  modal={props.setOpen}
-                />
+                <CampaignCard onClick={() => openModal()} data={e} />
               </SwiperSlide>
             </>
           ))}
